@@ -15,8 +15,9 @@ public class SetImplemenation {
 
 	private int SetLength = 0;
 	private boolean isEmpty = true;	
-	//int[] strArry = new int[10];
+	//int[] strArry = new int[10];  //If Basic DataTypes are mentioned
 	
+	// As List is the super set of Set, but not an implementation of SET
 	List<Object> strArray1 = new ArrayList<Object>();
 	
 	
@@ -28,7 +29,7 @@ public class SetImplemenation {
 		return isEmpty;
 	}
 
-	public int getSize() {
+	public int size() {
 		return SetLength;
 	}
 

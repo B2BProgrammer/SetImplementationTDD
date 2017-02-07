@@ -57,7 +57,7 @@ public class SetImplementationTest {
 	
 	@Test
 	public void getSizeTest(){
-		assertEquals(0, set.getSize());
+		assertEquals(0, set.size());
 	}
 	
 	
