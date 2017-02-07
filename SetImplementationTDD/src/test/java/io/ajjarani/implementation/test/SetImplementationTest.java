@@ -70,8 +70,8 @@ public class SetImplementationTest {
 	
 	@Test
 	public void containsTest(){		
-		set.add(2);	
-		assertEquals(true, set.contains(2));	
+		set.add("Ajith");	
+		assertEquals(true, set.contains("Divya"));	
 	}
 	
 	

@@ -10,13 +10,13 @@ public class SetBusinessUsage {
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("How many Numbers Do you want to enter in Set ?");
+		System.out.println("Set Length Needed ?");
 		int num = sc.nextInt();
 		
 		
-		System.out.println("Enter each Number :");		
+		System.out.println("Enter each data into Set :");		
 		for(int i=0 ; i< num ; i++){
-			set1.add(sc.nextInt());
+			set1.add(sc.next());
 		}
 				
 		System.out.println("Length of Set : "+set1.getSize());

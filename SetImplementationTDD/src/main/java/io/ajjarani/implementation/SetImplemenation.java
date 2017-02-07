@@ -3,6 +3,9 @@
  */
 package io.ajjarani.implementation;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author A.Ajjarani
  * 
@@ -12,7 +15,9 @@ public class SetImplemenation {
 
 	private int SetLength = 0;
 	private boolean isEmpty = true;	
-	int[] strArry = new int[10];
+	//int[] strArry = new int[10];
+	
+	List<Object> strArray1 = new ArrayList<Object>();
 	
 	
 	public SetImplemenation(){
@@ -27,22 +32,29 @@ public class SetImplemenation {
 		return SetLength;
 	}
 
-	public boolean contains(int intValue) {
+	public boolean contains(Object Value) {
 		boolean isContains = false;
 		
 		for(int i=0; i< SetLength ; i++){
-			if(strArry[i] == intValue){
-				isContains = true;
-			}
+			if(Value instanceof String){
+				if(strArray1.get(i).equals(Value)){
+					isContains = true;
+				}
+			} else if(Value instanceof Integer){
+				if(strArray1.get(i) == Value){
+					isContains = true;
+				}
+			}			
 		}		
 		return isContains;
 	}
 	
 	
-	public boolean add(int testValue) {
+	public boolean add(Object testValue) {
 		boolean isAdded = false;
 		if(!contains(testValue)){
-			strArry[SetLength] = testValue;
+			//strArry[SetLength] = testValue;
+			strArray1.add(testValue);
 			SetLength++;
 			isAdded = true;
 		} 
