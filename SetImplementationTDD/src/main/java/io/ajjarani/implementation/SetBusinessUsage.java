@@ -16,6 +16,7 @@ public class SetBusinessUsage {
 		System.out.println("Is the Set Empty as Not Initialized ? "+set2.isEmpty() +" "+
 							"If so what is the current Length : "+set2.size());
 		
+		// Testing
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		
