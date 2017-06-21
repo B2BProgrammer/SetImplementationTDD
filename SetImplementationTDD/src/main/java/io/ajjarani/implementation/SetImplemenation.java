@@ -3,6 +3,8 @@
  */
 package io.ajjarani.implementation;
 
+
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,7 +36,7 @@ public class SetImplemenation {
 	}
 
 	public boolean contains(Object Value) {
-		boolean isContains = false;
+		boolean isContains = false;		
 		
 		for(int i=0; i< SetLength ; i++){
 			if(Value instanceof String){
@@ -51,6 +53,9 @@ public class SetImplemenation {
 	}
 	
 	
+		
+	
+	
 	public boolean add(Object testValue) {
 		boolean isAdded = false;
 		if(!contains(testValue)){
@@ -59,6 +64,18 @@ public class SetImplemenation {
 			SetLength++;
 			isAdded = true;
 		} 
+		return isAdded;
+	}
+	
+	
+	public Object addNew(Object x) {
+		boolean isAdded = false;
+		
+		if(!contains(x)){
+			strArray1.add(x);
+			SetLength++;
+			isAdded = true;
+		}
 		return isAdded;
 	}
 
@@ -92,6 +109,11 @@ public class SetImplemenation {
 	public Object clear(Object o) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	public void contis() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

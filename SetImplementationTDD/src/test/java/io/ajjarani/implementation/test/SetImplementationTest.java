@@ -53,6 +53,8 @@ public class SetImplementationTest {
 	@Test
 	public void isEmptyTest(){	
 	assertEquals(true, set.isEmpty());	
+	
+	set.contis();
 	}
 	
 	@Test
@@ -65,6 +67,9 @@ public class SetImplementationTest {
 	@Test
 	public void addTest(){			
 		assertEquals(true, set.add(10));
+		
+		String x = "Megha";
+		assertEquals(true, set.addNew(x));
 	}
 	
 	
